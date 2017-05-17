@@ -29,7 +29,7 @@
 
     <!-- Custom styles for this theme -->
     <!-- Uncomment the color scheme you want to use! Red is chosen by default! -->
-    <link href="front-end/styles/css/vitality-red.css" rel="stylesheet" type="text/css">
+    <link href="front-end/styles/css/style.css" rel="stylesheet" type="text/css">
     <!-- <link href="css/vitality-aqua.css" rel="stylesheet" type="text/css"> -->
     <!-- <link href="css/vitality-blue.css" rel="stylesheet" type="text/css"> -->
     <!-- <link href="css/vitality-green.css" rel="stylesheet" type="text/css"> -->
@@ -55,7 +55,7 @@
 
     <!-- build:remove:dist -->
     <!-- Style Switcher CSS - Demo Purposes Only! -->
-    <link id="changeable-colors" rel="stylesheet" href="front-end/styles/css/vitality-red.css">
+    <link id="changeable-colors" rel="stylesheet" href="front-end/styles/css/style.css">
     <link href="front-end/styles/css/style-switcher.css" rel="stylesheet">
     <!-- /build -->
 
@@ -1105,25 +1105,25 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="front-end/scripts/source/jquery.min.js"></script>
-    <script src="front-end/scripts/source/tether.min.js"></script>
-    <script src="front-end/scripts/source/bootstrap.min.js"></script>
+    <script src="front-end/scripts/source/agency/jquery.min.js"></script>
+    <script src="front-end/scripts/source/agency/tether.min.js"></script>
+    <script src="front-end/scripts/source/agency/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="front-end/scripts/source/jquery.easing.min.js"></script>
-    <script src="front-end/scripts/source/owl.carousel.js"></script>
-    <script src="front-end/scripts/source/jquery.magnific-popup.min.js"></script>
-    <script src="front-end/scripts/source/jquery.vide.min.js"></script>
-    <script src="front-end/scripts/source/mixitup.min.js"></script>
-    <script src="front-end/scripts/source/wow.min.js"></script>
+    <script src="front-end/scripts/source/agency/jquery.easing.min.js"></script>
+    <script src="front-end/scripts/source/agency/owl.carousel.js"></script>
+    <script src="front-end/scripts/source/agency/jquery.magnific-popup.min.js"></script>
+    <script src="front-end/scripts/source/agency/jquery.vide.min.js"></script>
+    <script src="front-end/scripts/source/agency/mixitup.min.js"></script>
+    <script src="front-end/scripts/source/agency/wow.min.js"></script>
 
     <!-- Contact form JavaScript -->
-    <script src="front-end/scripts/source/contact_me.js"></script>
-    <script src="front-end/scripts/source/jqBootstrapValidation.js"></script>
+    <script src="front-end/scripts/source/agency/contact_me.js"></script>
+    <script src="front-end/scripts/source/agency/jqBootstrapValidation.js"></script>
 
     <!-- Custom scripts for this theme -->
-    <script src="front-end/scripts/source/vitality.js"></script>
-    <script src="front-end/scripts/source/vitality-mixitup.js"></script>
+    <script src="front-end/scripts/source/agency/vitality.js"></script>
+    <script src="front-end/scripts/source/agency/vitality-mixitup.js"></script>
 
     <!-- build:remove:dist -->
 
@@ -1191,7 +1191,7 @@
             </a>
         </div>
     </div>
-    <script src="front-end/scripts/source/style.switcher.js"></script>
+    <script src="front-end/scripts/source/agency/style.switcher.js"></script>
     <!-- End Style Switcher -->
     <!-- /build -->
 
