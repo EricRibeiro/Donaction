@@ -1,6 +1,6 @@
 # [Donaction - Enterprise](http://donaction.com.br/)
 
-Donaction Enterprise is a Donaction's project aimed at the entrepreneurs who are interest in Social Marketing for their businesses. The website's purpose is to introduce the product in a friendly and functional way and, hopefully, seal the partnership.
+Donaction Enterprise is a Donaction's project aimed at the entrepreneurs who are interested in Social Marketing for their businesses. The website's purpose is to introduce the product in a friendly and functional way and, hopefully, seal the partnership.
 
 ## The Site
 
