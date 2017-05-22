@@ -6,10 +6,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Donaction Enterprise">
+    <meta name="author" content="Donaction Team">
 
-    <title>Vitality - Multipurpose Bootstrap 4 One Page Theme</title>
+    <title>Donaction Enterprise</title>
 
     <!-- Bootstrap core CSS -->
     <link href="front-end/styles/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -26,19 +26,12 @@
     <link href="front-end/styles/css/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="front-end/styles/css/animate.min.css" rel="stylesheet" type="text/css">
     <link href="front-end/styles/css/device-mockups.min.css" rel="stylesheet" type="text/css">
+    <link href="front-end/styles/css/modalLogin.css" rel="stylesheet">
+    <link href="front-end/styles/css/sweetalert.css" rel="stylesheet">
 
     <!-- Custom styles for this theme -->
     <!-- Uncomment the color scheme you want to use! Red is chosen by default! -->
     <link href="front-end/styles/css/style.css" rel="stylesheet" type="text/css">
-    <!-- <link href="css/vitality-aqua.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-blue.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-green.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-orange.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-pink.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-purple.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-tan.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-turquoise.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-yellow.css" rel="stylesheet" type="text/css"> -->
 
     <!-- Temporary navbar container fix -->
     <style>
@@ -54,11 +47,6 @@
     </style>
 
     <!-- build:remove:dist -->
-    <!-- Style Switcher CSS - Demo Purposes Only! -->
-    <link id="changeable-colors" rel="stylesheet" href="front-end/styles/css/style.css">
-    <link href="front-end/styles/css/style-switcher.css" rel="stylesheet">
-    <!-- /build -->
-
 </head>
 
 <body id="page-top">
@@ -75,37 +63,41 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
+                        <a class="nav-link page-scroll" href="#about">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#team">Team</a>
+                        <a class="nav-link page-scroll" href="#team">Empresas Parceiras</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#services">Process</a>
+                        <a class="nav-link page-scroll" href="#services">Processo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#work">Work</a>
+                        <a class="nav-link page-scroll" href="#campanhas">Campanhas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+                        <a class="nav-link page-scroll" href="#contact">Contato</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    	<a class="nav-link" href="#" data-toggle="modal" data-target="#login-modal">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <?php include 'front-end/pages/modals/login.php'; ?>
+
     <!-- Masthead -->
     <header class="masthead" style="background-image: url('front-end/images/backgrounds/bg-header.jpg');">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 my-auto text-center text-white">
-                    <img class="masthead-img img-fluid mb-3" src="front-end/images/agency/profile.svg" alt="">
-                    <div class="masthead-title">Vitality</div>
+                    <img class="masthead-img img-fluid mb-3" src="" alt="">
+                    <div class="masthead-title">Donaction Enterprise</div>
                     <hr class="colored">
-                    <div class="masthead-subtitle">by Start Bootstrap</div>
+                    <div class="masthead-subtitle">Conectando Benfeitores</div>
+                    <hr class="colored">
+                    <a class="btn btn-primary page-scroll" href="#services">Cadastrar</a>
                 </div>
             </div>
         </div>
@@ -120,37 +112,37 @@
     <section class="page-section" id="about">
         <div class="container-fluid">
             <div class="wow fadeIn text-center">
-                <h1>A Theme for Creatives &amp; Agencies</h1>
-                <p class="mb-0">Vitality is the perfect theme for a freelance professional or an agency.</p>
+                <h1></h1>
+                <p class="mb-0">A Donaction é uma empresa especializada em marketing do bem. Acreditamos que através de um ambiente saudável onde todos ganham podemos transformar o mundo em um lugar melhor!</p>
             </div>
             <hr class="colored">
             <div class="row text-center">
                 <div class="col-lg-3 col-md-6">
                     <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".2s">
-                        <i class="fa fa-code fa-4x"></i>
-                        <h3>Bootstrap 4</h3>
-                        <p class="mb-0">Unleash the power and flexibility of the newly released Bootstrap 4 when you choose Vitality! One framework, every device.</p>
+                        <i class="fa fa-thumbs-o-up fa-4x"></i>
+                        <h4>Marketing do Bem</h4>
+                        <p class="mb-0">Tenha o seu número de clientes aumentado e a sua empresa atrelada a uma imagem positiva através do nosso modelo de marketing!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
-                        <i class="fa fa-edit fa-4x"></i>
-                        <h3>Easy to Edit</h3>
-                        <p class="mb-0">Vitality is easy to edit and customize and includes SASS and LESS versions for deeper customization.</p>
+                        <i class="fa fa-handshake-o fa-4x"></i>
+                        <h3>Todos ganham!</h3>
+                        <p class="mb-0">A Donaction faz questão de promover um ambiente saudável entre todas a partes envolvidas no processo!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".6s">
-                        <i class="fa fa-tablet fa-4x"></i>
-                        <h3>Responsive</h3>
-                        <p class="mb-0">In today's world where devices come in every shape and size, Vitality will responsively adapt to look great on any screen!</p>
+                        <i class="fa fa-area-chart fa-4x"></i>
+                        <h3>Análises</h3>
+                        <p class="mb-0">Iremos achar a melhor campanha e a melhor estratégia de marketing para a sua empresa independente do seu ramo!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="wow fadeIn px-4 h-100" data-wow-delay=".8s">
                         <i class="fa fa-heart fa-4x"></i>
-                        <h3>Built with Love</h3>
-                        <p class="mb-0">All themes by Start Bootstrap are crafted with care. Thank you for choosing Vitality and being a customer!</p>
+                        <h3>Feita com amor!</h3>
+                        <p class="mb-0">Todas as nossas campanhas são feitas com muito carinho para satisfazermos o máximo tanto você quanto os seus clientes!</p>
                     </div>
                 </div>
             </div>
@@ -160,127 +152,63 @@
     <!-- Team Section -->
     <section class="page-section bg-faded" id="team">
         <div class="container text-center wow fadeIn">
-            <h2>Our Team</h2>
-            <p class="mb-0">We are a group of digital marketers with a passion for great art that serves a practical purpose.</p>
+            <h2>Nossas empresas parceiras!</h2>
+            <p class="mb-0">Essas empresas confiam e trabalham com a Donaction:</p>
             <hr class="colored">
             <div class="team-carousel owl-carousel owl-theme mt-4">
 
                 <!-- Team Carousel Item 1 -->
                 <div class="item">
                     <div class="overlay"></div>
-                    <img class="img-fluid" src="front-end/images/team/1.jpg" alt="">
+                    <img class="img-fluid" src="front-end/images/empresas/1.png" alt="Amazon">
                     <div class="team-caption">
-                        <h3>Patricia West</h3>
+                        <h3>Amazon</h3>
                         <hr class="colored">
-                        <p>Marketing Director</p>
-                        <ul class="list-inline list-team-social">
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                            </li>
-                        </ul>
+                        <p>"...and you're done"</p>
                     </div>
                 </div>
 
                 <!-- Team Carousel Item 2 -->
                 <div class="item">
                     <div class="overlay"></div>
-                    <img class="img-fluid" src="front-end/images/team/2.jpg" alt="">
+                    <img class="img-fluid" src="front-end/images/empresas/2.png" alt="Google">
                     <div class="team-caption">
-                        <h3>Howard Scott</h3>
+                        <h3>Google</h3>
                         <hr class="colored">
-                        <p>Sales Manager</p>
-                        <ul class="list-inline list-team-social">
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                            </li>
-                        </ul>
+                        <p>"Don't be evil"</p>
                     </div>
                 </div>
 
                 <!-- Team Carousel Item 3 -->
                 <div class="item">
                     <div class="overlay"></div>
-                    <img class="img-fluid" src="front-end/images/team/3.jpg" alt="">
+                    <img class="img-fluid" src="front-end/images/empresas/3.jpg" alt="Microsoft">
                     <div class="team-caption">
-                        <h3>Kate Williams</h3>
+                        <h3>Microsoft</h3>
                         <hr class="colored">
-                        <p>Creative Director</p>
-                        <ul class="list-inline list-team-social">
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-dribbble fa-fw"></i></a>
-                            </li>
-                        </ul>
+                        <p>"We Innovate You Turn"</p>
                     </div>
                 </div>
 
                 <!-- Team Carousel Item 4 -->
                 <div class="item">
                     <div class="overlay"></div>
-                    <img class="img-fluid" src="front-end/images/team/4.jpg" alt="">
+                    <img class="img-fluid" src="front-end/images/empresas/4.png" alt="Apple">
                     <div class="team-caption">
-                        <h3>Jeremy Davidson</h3>
+                        <h3>Apple</h3>
                         <hr class="colored">
-                        <p>Web Developer</p>
-                        <ul class="list-inline list-team-social">
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-github fa-fw"></i></a>
-                            </li>
-                        </ul>
+                        <p>"Think different"</p>
                     </div>
                 </div>
 
                 <!-- Team Carousel Item 5 -->
                 <div class="item">
                     <div class="overlay"></div>
-                    <img class="img-fluid" src="front-end/images/team/5.jpg" alt="">
+                    <img class="img-fluid" src="front-end/images/empresas/5.png" alt="GitHub">
                     <div class="team-caption">
-                        <h3>Amy Vanderbute</h3>
+                        <h3>GitHub</h3>
                         <hr class="colored">
-                        <p>Graphic Artist</p>
-                        <ul class="list-inline list-team-social">
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-dribbble fa-fw"></i></a>
-                            </li>
-                        </ul>
+                        <p>"Social Code Hosting"</p>
                     </div>
                 </div>
 
@@ -293,9 +221,9 @@
         <div class="container wow fadeIn">
             <div class="row">
                 <div class="col-md-10 offset-md-1">
-                    <span class="quote">Good <span class="text-primary">design</span> is finding that perfect balance between the way something <span class="text-primary">looks</span> and how it <span class="text-primary">functions</span>.</span>
+                    <span class="quote">Marketing <span class="text-primary">autêntico</span> não é a arte de vender o que você faz mas saber o que fazer. É a arte de <span class="text-primary"> identificar</span> e <span class="text-primary"> compreender</span> as necessidades dos <span class="text-primary"> consumidores</span> e criar soluções que tragam satisfação aos consumidores, lucros aos produtores e benefícios aos acionistas.</span>
                     <hr class="colored">
-                    <a class="btn btn-primary page-scroll" href="#services">How We Work</a>
+                    <a class="btn btn-primary page-scroll" href="#services">Como nós trabalhamos</a>
                 </div>
             </div>
         </div>
@@ -305,9 +233,9 @@
     <section class="page-section services" id="services">
         <div class="container">
             <div class="text-center wow fadeIn">
-                <h2>Our Process</h2>
+                <h2>Nosso processo</h2>
                 <hr class="colored">
-                <p class="mb-0">Here is an overview of how we approach each new project.</p>
+                <p class="mb-0">Esta é a maneira como trabalhamos.</p>
             </div>
             <div class="row mt-4">
                 <!-- Service Item 1 -->
@@ -317,12 +245,12 @@
                             <i class="fa fa-clipboard rounded-circle"></i>
                         </div>
                         <div class="media-body">
-                            <h3 class="media-heading">Plan</h3>
+                            <h3 class="media-heading">Planejamento</h3>
                             <ul>
-                                <li>Client interview</li>
-                                <li>Gather consumer data</li>
-                                <li>Create content strategy</li>
-                                <li>Analyze research</li>
+                                <li>Entrevistar o cliente</li>
+                                <li>Juntar dados dos consumidores</li>
+                                <li>Analizar os dados</li>
+                                <li>Definir a estratégia</li>
                             </ul>
                         </div>
                     </div>
@@ -334,12 +262,12 @@
                             <i class="fa fa-pencil rounded-circle"></i>
                         </div>
                         <div class="media-body">
-                            <h3 class="media-heading">Create</h3>
+                            <h3 class="media-heading">Criação</h3>
                             <ul>
-                                <li>Build wireframe</li>
-                                <li>Gather client feedback</li>
-                                <li>Code development</li>
-                                <li>Marketing review</li>
+                                <li>Criar conteúdo</li>
+                                <li>Receber feedback</li>
+                                <li>Refinar conteúdo</li>
+                                <li>Receber mais feedback</li>
                             </ul>
                         </div>
                     </div>
@@ -351,12 +279,12 @@
                             <i class="fa fa-rocket rounded-circle"></i>
                         </div>
                         <div class="media-body">
-                            <h3 class="media-heading">Launch</h3>
+                            <h3 class="media-heading">Lançamento</h3>
                             <ul>
-                                <li>Deploy website</li>
-                                <li>Market product launch</li>
-                                <li>Collect UX data</li>
-                                <li>Quarterly maintenence</li>
+                                <li>Lançar a campanha</li>
+                                <li>Divulgar o conteúdo criado</li>
+                                <li>Coletar os dados</li>
+                                <li>Garantir a manutenção</li>
                             </ul>
                         </div>
                     </div>
@@ -365,253 +293,131 @@
         </div>
     </section>
 
-    <!-- Portfolio Carousel Heading -->
-    <section class="page-section bg-faded" id="work">
-        <div class="container text-center wow fadeIn">
-            <h2>Our Work</h2>
-            <hr class="colored">
-            <p>Here are some examples of our work.</p>
-        </div>
-    </section>
-
-    <!-- Portfolio Carousel -->
-    <div class="portfolio-carousel wow fadeIn owl-carousel owl-theme">
-
-        <!-- Portfolio Carousel Item 1 -->
-        <div class="item" style="background-image: url('front-end/images/portfolio/bg-1.jpg')">
-            <div class="container-fluid">
-                <div class="row h-100">
-                    <div class="col-md-5 push-md-7 my-auto">
-                        <div class="project-details">
-                            <span class="project-name">Project Name</span>
-                            <span class="project-description">Branding, Website Design</span>
-                            <hr class="colored">
-                            <a href="#portfolioModal1" data-toggle="modal" class="btn btn-primary">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-7 pull-md-5 hidden-xs my-auto">
-                        <div class="device-container">
-                            <div class="device-mockup macbook portrait black">
-                                <div class="device">
-                                    <div class="screen">
-                                        <img class="img-fluid" src="front-end/images/portfolio/screen-1a.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Portfolio Carousel Item 2 -->
-        <div class="item" style="background-image: url('front-end/images/portfolio/bg-2.jpg')">
-            <div class="container-fluid">
-                <div class="row h-100">
-                    <div class="col-md-5 push-md-7 my-auto">
-                        <div class="project-details">
-                            <span class="project-name">Project Name</span>
-                            <span class="project-description">Branding, Website Design</span>
-                            <hr class="colored">
-                            <a href="#portfolioModal2" data-toggle="modal" class="btn btn-primary">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-7 pull-md-5 hidden-xs my-auto">
-                        <div class="device-container">
-                            <div class="device-mockup macbook portrait black">
-                                <div class="device">
-                                    <div class="screen">
-                                        <img class="img-fluid" src="front-end/images/portfolio/screen-2a.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Portfolio Carousel Item 3 -->
-        <div class="item" style="background-image: url('front-end/images/portfolio/bg-3.jpg')">
-            <div class="container-fluid">
-                <div class="row h-100">
-                    <div class="col-md-5 push-md-7 my-auto">
-                        <div class="project-details">
-                            <span class="project-name">Project Name</span>
-                            <span class="project-description">Branding, Website Design</span>
-                            <hr class="colored">
-                            <a href="#portfolioModal3" data-toggle="modal" class="btn btn-primary">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-7 pull-md-5 hidden-xs my-auto">
-                        <div class="device-container">
-                            <div class="device-mockup macbook portrait black">
-                                <div class="device">
-                                    <div class="screen">
-                                        <img class="img-fluid" src="front-end/images/portfolio/screen-3a.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Portfolio Carousel Item 4 -->
-        <div class="item" style="background-image: url('front-end/images/portfolio/bg-4.jpg')">
-            <div class="container-fluid">
-                <div class="row h-100">
-                    <div class="col-md-5 push-md-7 my-auto">
-                        <div class="project-details">
-                            <span class="project-name">Project Name</span>
-                            <span class="project-description">Branding, Website Design</span>
-                            <hr class="colored">
-                            <a href="#portfolioModal4" data-toggle="modal" class="btn btn-primary">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-7 pull-md-5 hidden-xs my-auto">
-                        <div class="device-container">
-                            <div class="device-mockup macbook portrait black">
-                                <div class="device">
-                                    <div class="screen">
-                                        <img class="img-fluid" src="front-end/images/portfolio/screen-4.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
     <!-- Portfolio Grid Section -->
-    <section class="page-section">
+    <section class="page-section" id="campanhas">
         <div class="container text-center wow fadeIn">
-            <h2>Portfolio</h2>
+            <h2>Campanhas</h2>
             <hr class="colored">
-            <p>Here are some other projects that we've worked on.</p>
+            <p>Estas são algumas das campanhas que fizemos.</p>
             <div class="controls mt-3">
-                <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-filter="all">All</button>
-                <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-filter=".identity">Identity</button>
-                <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-filter=".graphic">Graphic</button>
-                <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-filter=".web">Web</button>
+                <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-filter="all">Todas</button>
+                <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-filter=".sangue">Doação de sangue</button>
+                <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-filter=".educacao">Incentivo a educação</button>
+                <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-filter=".social">Incentivos Sociais</button>
             </div>
             <div class="portfolio-grid clearfix" id="portfolioList">
                 <!-- Grid Item 1 -->
-                <div class="mix identity" href="front-end/images/grid/grid-1.jpg" title="Client Name">
+                <div class="mix educacao" href="front-end/images/grid/grid-1.jpg" title="Leitura">
                     <div class="portfolio-wrapper">
-                        <img src="front-end/images/grid/grid-1.jpg" alt="">
+                        <img src="front-end/images/grid/grid-1.jpg" alt="Leitura">
                         <div class="caption">
                             <div class="caption-text">
-                                <a class="text-title">Client Name</a>
-                                <span class="text-category">Brand Identity</span>
+                                <a class="text-title">Leitura</a>
+                                <span class="text-category">Campanha "Ler fazendo o bem"</span>
                             </div>
                             <div class="caption-bg"></div>
                         </div>
                     </div>
                 </div>
                 <!-- Grid Item 2 -->
-                <div class="mix web" href="front-end/images/grid/grid-2.jpg" title="Client Name">
+                <div class="mix social" href="front-end/images/grid/grid-2.jpg" title="Elmo Calçados">
                     <div class="portfolio-wrapper">
-                        <img src="front-end/images/grid/grid-2.jpg" alt="">
+                        <img src="front-end/images/grid/grid-2.jpg" alt="Elmo Calçados">
                         <div class="caption">
                             <div class="caption-text">
-                                <a class="text-title">Client Name</a>
-                                <span class="text-category">Web Development</span>
+                                <a class="text-title">Elmo Calçados</a>
+                                <span class="text-category">Campanha "Calçando o mundo"</span>
                             </div>
                             <div class="caption-bg"></div>
                         </div>
                     </div>
                 </div>
                 <!-- Grid Item 3 -->
-                <div class="mix web" href="front-end/images/grid/grid-3.jpg" title="Client Name">
+                <div class="mix sangue" href="front-end/images/grid/grid-3.jpg" title="Sadia">
                     <div class="portfolio-wrapper">
-                        <img src="front-end/images/grid/grid-3.jpg" alt="">
+                        <img src="front-end/images/grid/grid-3.jpg" alt="Sadia">
                         <div class="caption">
                             <div class="caption-text">
-                                <a class="text-title">Client Name</a>
-                                <span class="text-category">Web Development</span>
+                                <a class="text-title">Sadia</a>
+                                <span class="text-category">Campanha "O valor da vida"</span>
                             </div>
                             <div class="caption-bg"></div>
                         </div>
                     </div>
                 </div>
                 <!-- Grid Item 4 -->
-                <div class="mix identity" href="front-end/images/grid/grid-4.jpg" title="Client Name">
+                <div class="mix social" href="front-end/images/grid/grid-4.jpg" title="Leroy Merlin">
                     <div class="portfolio-wrapper">
-                        <img src="front-end/images/grid/grid-4.jpg" alt="">
+                        <img src="front-end/images/grid/grid-4.jpg" alt="Leroy Merlin">
                         <div class="caption">
                             <div class="caption-text">
-                                <a class="text-title">Client Name</a>
-                                <span class="text-category">Brand Identity</span>
+                                <a class="text-title">Leroy Merlin</a>
+                                <span class="text-category">Campanha "Casa dos sonhos"</span>
                             </div>
                             <div class="caption-bg"></div>
                         </div>
                     </div>
                 </div>
                 <!-- Grid Item 5 -->
-                <div class="mix web" href="front-end/images/grid/grid-5.jpg" title="Client Name">
+                <div class="mix social" href="front-end/images/grid/grid-5.jpg" title="Textil Abril">
                     <div class="portfolio-wrapper">
-                        <img src="front-end/images/grid/grid-5.jpg" alt="">
+                        <img src="front-end/images/grid/grid-5.jpg" alt="Textil Abril">
                         <div class="caption">
                             <div class="caption-text">
-                                <a class="text-title">Client Name</a>
-                                <span class="text-category">Web Development</span>
+                                <a class="text-title">Textil Abril</a>
+                                <span class="text-category">Campanha "Inverno para todos"</span>
                             </div>
                             <div class="caption-bg"></div>
                         </div>
                     </div>
                 </div>
                 <!-- Grid Item 6 -->
-                <div class="mix graphic" href="front-end/images/grid/grid-6.jpg" title="Client Name">
+                <div class="mix sangue" href="front-end/images/grid/grid-6.jpg" title="Editora Abril">
                     <div class="portfolio-wrapper">
-                        <img src="front-end/images/grid/grid-6.jpg" alt="">
+                        <img src="front-end/images/grid/grid-6.jpg" alt="Editora Abril">
                         <div class="caption">
                             <div class="caption-text">
-                                <a class="text-title">Client Name</a>
-                                <span class="text-category">Graphic Design</span>
+                                <a class="text-title">Editora Abril</a>
+                                <span class="text-category">Campanha "O peso da vida"</span>
                             </div>
                             <div class="caption-bg"></div>
                         </div>
                     </div>
                 </div>
                 <!-- Grid Item 7 -->
-                <div class="mix graphic" href="front-end/images/grid/grid-7.jpg" title="Client Name">
+                <div class="mix educacao" href="front-end/images/grid/grid-7.jpg" title="Pizza Hut">
                     <div class="portfolio-wrapper">
-                        <img src="front-end/images/grid/grid-7.jpg" alt="">
+                        <img src="front-end/images/grid/grid-7.jpg" alt="Pizza Hut">
                         <div class="caption">
                             <div class="caption-text">
-                                <a class="text-title">Client Name</a>
-                                <span class="text-category">Graphic Design</span>
+                                <a class="text-title">Pizza Hut</a>
+                                <span class="text-category">Campanha "O sabor do conhecimento"</span>
                             </div>
                             <div class="caption-bg"></div>
                         </div>
                     </div>
                 </div>
                 <!-- Grid Item 8 -->
-                <div class="mix web" href="front-end/images/grid/grid-8.jpg" title="Client Name">
+                <div class="mix educacao" href="front-end/images/grid/grid-8.jpg" title="Redbull">
                     <div class="portfolio-wrapper">
-                        <img src="front-end/images/grid/grid-8.jpg" alt="">
+                        <img src="front-end/images/grid/grid-8.jpg" alt="Redbull">
                         <div class="caption">
                             <div class="caption-text">
-                                <a class="text-title">Client Name</a>
-                                <span class="text-category">Web Development</span>
+                                <a class="text-title">Redbull</a>
+                                <span class="text-category">Campanha "A energia do saber"</span>
                             </div>
                             <div class="caption-bg"></div>
                         </div>
                     </div>
                 </div>
                 <!-- Grid Item 9 -->
-                <div class="mix identity" href="front-end/images/grid/grid-9.jpg" title="Client Name">
+                <div class="mix sangue" href="front-end/images/grid/grid-9.jpg" title="Gol Linhas Aéreas">
                     <div class="portfolio-wrapper">
                         <img src="front-end/images/grid/grid-9.jpg" alt="">
                         <div class="caption">
                             <div class="caption-text">
-                                <a class="text-title">Client Name</a>
-                                <span class="text-category">Brand Identity</span>
+                                <a class="text-title">Gol Linhas Aéreas</a>
+                                <span class="text-category">Campanha "Vida nas alturas"</span>
                             </div>
                             <div class="caption-bg"></div>
                         </div>
@@ -629,15 +435,14 @@
                     <div class="testimonials-carousel">
                         <!-- Testimonial Item 1 -->
                         <div class="item mb-4">
-                            <p class="lead">"Working with Vitality was both a valuable and rewarding experience."</p>
+                            <p class="lead">"Trabalhar com a Donaction foi uma experiência recompensadora!"</p>
                             <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
                             <div class="testimonial-img">
-                                <img class="rounded-circle img-fluid" src="front-end/images/testimonials/1.jpg" alt="">
+                                <img class="rounded-circle img-fluid" src="front-end/images/testemunhas/1.jpg" alt="">
                             </div>
                             <div class="testimonial-author">
-                                <span class="name">Jim Walker</span>
-                                <p class="small">CEO of Company Name</p>
+                                <span class="name">Ednaldo Pereira</span>
+                                <p class="small">Cantor de sucesso</p>
                                 <div class="stars">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -649,15 +454,14 @@
                         </div>
                         <!-- Testimonial Item 2 -->
                         <div class="item mb-4">
-                            <p class="lead">"Vitality is a well coded, well documented, and easy to use theme!"</p>
+                            <p class="lead">"A Donaction ajudou a minha empresa com novos clientes e dando uma imagem positiva a ela!"</p>
                             <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem amet rem minus dolorum, facere in soluta explicabo, unde eveniet illo vel, nemo nostrum atque nesciunt facilis quaerat quasi reprehenderit dicta.</p>
                             <div class="testimonial-img">
-                                <img class="rounded-circle img-fluid" src="front-end/images/testimonials/2.jpg" alt="">
+                                <img class="rounded-circle img-fluid" src="front-end/images/testemunhas/2.jpg" alt="">
                             </div>
                             <div class="testimonial-author">
-                                <span class="name">Ashley Creadle</span>
-                                <p class="small">Creative Director of Company Name</p>
+                                <span class="name">Yudi Tamashiro</span>
+                                <p class="small">CEO da empresa praystêichu</p>
                                 <div class="stars">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -667,70 +471,64 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                        <!-- Testimonial Item 3 -->
+                        <div class="item mb-4">
+                            <p class="lead">"Eu era considerado vilão, agora virei presidente graças a Donaction!"</p>
+                            <hr class="colored">
+                            <div class="testimonial-img">
+                                <img class="rounded-circle img-fluid" src="front-end/images/testemunhas/3.png" alt="">
+                            </div>
+                            <div class="testimonial-author">
+                                <span class="name">Dr. Ácula</span>
+                                <p class="small">Famoso vampiro da década de 20</p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial Item 4 -->
+                        <div class="item mb-4">
+                            <p class="lead">"Se você não sabe da Donaction nem eu!"</p>
+                            <hr class="colored">
+                            <div class="testimonial-img">
+                                <img class="rounded-circle img-fluid" src="front-end/images/testemunhas/4.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author">
+                                <span class="name">Irineu</span>
+                                <p class="small">Motorista ousado</p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial Item 5 -->
+                        <div class="item mb-4">
+                            <p class="lead">"au!"</p>
+                            <hr class="colored">
+                            <div class="testimonial-img">
+                                <img class="rounded-circle img-fluid" src="front-end/images/testemunhas/5.jpeg" alt="">
+                            </div>
+                            <div class="testimonial-author">
+                                <span class="name">Doge</span>
+                                <p class="small">Cachorro nas horas vagas</p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
 
-    <!-- Pricing Section -->
-    <section class="page-section pricing" id="pricing" style="background-image: url('front-end/images/backgrounds/bg-pricing.jpg')">
-        <div class="container wow fadeIn">
-            <div class="text-center">
-                <h2>Pricing</h2>
-                <hr class="colored">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quae, laborum, voluptate delectus odio doloremque error porro obcaecati nemo animi ducimus quaerat nostrum? Ab molestiae eaque et atque architecto reiciendis.</p>
-            </div>
-            <div class="row">
-                <!-- Pricing Table 1 -->
-                <div class="col-md-4">
-                    <div class="pricing-item featured-first">
-                        <h3>Basic</h3>
-                        <hr class="colored">
-                        <div class="price"><span class="number"><sup>$</sup>25</span> / month</div>
-                        <ul class="list-group mb-3">
-                            <li class="list-group-item">60 Users</li>
-                            <li class="list-group-item">Unlimited Forums</li>
-                            <li class="list-group-item">Unlimited Reports</li>
-                            <li class="list-group-item">3,000 Entries per Month</li>
-                            <li class="list-group-item">200 MB Storage</li>
-                            <li class="list-group-item">Unlimited Support</li>
-                        </ul>
-                        <a href="#" class="btn btn-secondary">Sign Up</a>
-                    </div>
-                </div>
-                <!-- Pricing Table 2 -->
-                <div class="col-md-4">
-                    <div class="pricing-item featured">
-                        <h3>Plus</h3>
-                        <hr class="colored">
-                        <div class="price"><span class="number"><sup>$</sup>50</span> / month</div>
-                        <ul class="list-group mb-3">
-                            <li class="list-group-item">60 Users</li>
-                            <li class="list-group-item">Unlimited Forums</li>
-                            <li class="list-group-item">Unlimited Reports</li>
-                            <li class="list-group-item">3,000 Entries per Month</li>
-                            <li class="list-group-item">200 MB Storage</li>
-                            <li class="list-group-item">Unlimited Support</li>
-                        </ul>
-                        <a href="#" class="btn btn-secondary">Sign Up</a>
-                    </div>
-                </div>
-                <!-- Pricing Table 3 -->
-                <div class="col-md-4">
-                    <div class="pricing-item featured-last">
-                        <h3>Premium</h3>
-                        <hr class="colored">
-                        <div class="price"><span class="number"><sup>$</sup>150</span> / month</div>
-                        <ul class="list-group mb-3">
-                            <li class="list-group-item">60 Users</li>
-                            <li class="list-group-item">Unlimited Forums</li>
-                            <li class="list-group-item">Unlimited Reports</li>
-                            <li class="list-group-item">3,000 Entries per Month</li>
-                            <li class="list-group-item">200 MB Storage</li>
-                            <li class="list-group-item">Unlimited Support</li>
-                        </ul>
-                        <a href="#" class="btn btn-secondary">Sign Up</a>
                     </div>
                 </div>
             </div>
@@ -740,7 +538,7 @@
     <!-- Newsletter Signup Call to Action -->
     <section class="page-section signup-form bg-inverse text-white">
         <div class="container text-center">
-            <h3 class="m0">Subscribe to our newsletter!</h3>
+            <h3 class="m0">Inscreva-se no nosso feed de notícias!</h3>
             <hr class="colored">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -749,9 +547,9 @@
                         <!-- Replace the form action in the line below with your MailChimp embed action! Visit the documentation for additional instructions! -->
                         <form role="form" action="//startbootstrap.us3.list-manage.com/subscribe/post?u=531af730d8629808bd96cf489&amp;id=afb284632f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
                             <div class="input-group input-group-lg">
-                                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
+                                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Endereço de e-mail">
                                 <span class="input-group-btn">
-                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe!</button>
+                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Inscrever!</button>
                                 </span>
                             </div>
                             <div id="mce-responses">
@@ -770,38 +568,38 @@
     <section class="page-section" id="contact">
         <div class="container wow fadeIn">
             <div class="text-center">
-                <h2>Contact Us</h2>
+                <h2>Contato</h2>
                 <hr class="colored">
-                <p>Please tell us about your next project and we will let you know what we can do to help you.</p>
+                <p>Alguma dúvida/elogio/sugestão? Diga para gente para melhorarmos sempre! a equipe Donaction agradece!</p>
             </div>
             <div class="row mt-4">
                 <div class="col-lg-8 offset-lg-2">
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <label>Nome</label>
+                                <input type="text" class="form-control" placeholder="Nome" id="name" required data-validation-required-message="Por favor digite seu nome.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <label>E-mail</label>
+                                <input type="email" class="form-control" placeholder="E-mail" id="email" required data-validation-required-message="Por favor digite seu e-mail.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <label>Telefone</label>
+                                <input type="tel" class="form-control" placeholder="Telefone" id="phone" required data-validation-required-message="Por favor digite seu número de telefone.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <label>Mensagem</label>
+                                <textarea rows="5" class="form-control" placeholder="Mensagem" id="message" required data-validation-required-message="Por favor digite a mensagem."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -809,7 +607,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-12">
-                                <button type="submit" class="btn btn-secondary">Send</button>
+                                <button type="submit" class="btn btn-secondary">Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -818,25 +616,22 @@
         </div>
     </section>
 
-    <!-- Block Button Call to Action -->
-    <a class="btn btn-block btn-full-width" href="https://wrapbootstrap.com/theme/vitality-multipurpose-one-page-theme-WB02K3KK3">Buy Vitality Now!</a>
-
     <!-- Footer -->
     <footer class="footer" style="background-image: url('front-end/images/backgrounds/bg-footer.jpg')">
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-4 footer-contact-details">
-                    <h4><i class="fa fa-phone"></i> Call</h4>
-                    <p>555-213-4567</p>
+                    <h4><i class="fa fa-phone"></i> Ligue para nós</h4>
+                    <p>(31) 3427-1277</p>
                 </div>
                 <div class="col-md-4 footer-contact-details">
-                    <h4><i class="fa fa-map-marker"></i> Visit</h4>
-                    <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
+                    <h4><i class="fa fa-map-marker"></i> Nos visite</h4>
+                    <p>Avenida Coronel José Dias Bicalho Nº 515
+                        <br>Belo Horizonte, MG 31275-050</p>
                 </div>
                 <div class="col-md-4 footer-contact-details">
-                    <h4><i class="fa fa-envelope"></i> Email</h4>
-                    <p><a href="mailto:mail@example.com">mail@example.com</a>
+                    <h4><i class="fa fa-envelope"></i> E-mail</h4>
+                    <p><a href="mailto:donactionenterprise@donaction.com">donactionenterprise@shulambs.com</a>
                     </p>
                 </div>
             </div>
@@ -855,254 +650,9 @@
                     </ul>
                 </div>
             </div>
-            <p class="copyright">&copy; 2017 Start Bootstrap Themes</p>
+            <p class="copyright">&copy; 2017 Donaction Team</p>
         </div>
     </footer>
-
-    <!-- Portfolio Modals -->
-    <!-- Example Modal 1: Corresponds with Portfolio Carousel Item 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('front-end/images/portfolio/bg-1.jpg')">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 offset-lg-2">
-                                <h2>Project Name</h2>
-                                <hr class="colored">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                            </div>
-                            <div class="col-lg-8 offset-lg-2">
-                                <div class="device-mockup macbook portrait black">
-                                    <div class="device">
-                                        <div class="screen">
-
-                                            <!-- Modal Mockup Option 1: Single Image (Uncomment Below to Use) -->
-                                            <!-- <img src="front-end/images/portfolio/screen-1a.jpg" class="img-fluid" alt=""> -->
-
-                                            <!-- Modal Mockup Option 2: Carousel (Example In Use Below) -->
-                                            <div class="mockup-carousel">
-                                                <div class="item">
-                                                    <img src="front-end/images/portfolio/screen-1a.jpg" class="img-fluid" alt="">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="front-end/images/portfolio/screen-1b.jpg" class="img-fluid" alt="">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="front-end/images/portfolio/screen-1c.jpg" class="img-fluid" alt="">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 offset-lg-2">
-                                <ul class="list-inline item-details">
-                                    <li>Client: <strong>Start Bootstrap</strong>
-                                    </li>
-                                    <li>Date: <strong>April 2017</strong>
-                                    </li>
-                                    <li>Service: <strong>Web Development</strong>
-                                    </li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Example Modal 2: Corresponds with Portfolio Carousel Item 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('front-end/images/portfolio/bg-2.jpg')">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 offset-lg-2">
-                                <h2>Project Name</h2>
-                                <hr class="colored">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                            </div>
-                            <div class="col-lg-8 offset-lg-2">
-                                <div class="device-mockup macbook portrait black">
-                                    <div class="device">
-                                        <div class="screen">
-
-                                            <!-- Modal Mockup Option 1: Single Image (Uncomment Below to Use) -->
-                                            <!-- <img src="front-end/images/portfolio/screen-2a.jpg" class="img-fluid" alt=""> -->
-
-                                            <!-- Modal Mockup Option 2: Carousel (Example In Use Below) -->
-                                            <div class="mockup-carousel">
-                                                <div class="item">
-                                                    <img src="front-end/images/portfolio/screen-2a.jpg" class="img-fluid" alt="">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="front-end/images/portfolio/screen-2b.jpg" class="img-fluid" alt="">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="front-end/images/portfolio/screen-2c.jpg" class="img-fluid" alt="">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 offset-lg-2">
-                                <ul class="list-inline item-details">
-                                    <li>Client: <strong>Start Bootstrap</strong>
-                                    </li>
-                                    <li>Date: <strong>April 2017</strong>
-                                    </li>
-                                    <li>Service: <strong>Web Development</strong>
-                                    </li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Example Modal 3: Corresponds with Portfolio Carousel Item 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('front-end/images/portfolio/bg-3.jpg')">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 offset-lg-2">
-                                <h2>Project Name</h2>
-                                <hr class="colored">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                            </div>
-                            <div class="col-lg-8 offset-lg-2">
-                                <div class="device-mockup macbook portrait black">
-                                    <div class="device">
-                                        <div class="screen">
-
-                                            <!-- Modal Mockup Option 1: Single Image (Uncomment Below to Use) -->
-                                            <!-- <img src="front-end/images/portfolio/screen-2a.jpg" class="img-fluid" alt=""> -->
-
-                                            <!-- Modal Mockup Option 2: Carousel (Example In Use Below) -->
-                                            <div class="mockup-carousel">
-                                                <div class="item">
-                                                    <img src="front-end/images/portfolio/screen-3a.jpg" class="img-fluid" alt="">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="front-end/images/portfolio/screen-3b.jpg" class="img-fluid" alt="">
-                                                </div>
-                                                <div class="item">
-                                                    <img src="front-end/images/portfolio/screen-3c.jpg" class="img-fluid" alt="">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 offset-lg-2">
-                                <ul class="list-inline item-details">
-                                    <li>Client: <strong>Start Bootstrap</strong>
-                                    </li>
-                                    <li>Date: <strong>April 2017</strong>
-                                    </li>
-                                    <li>Service: <strong>Web Development</strong>
-                                    </li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Example Modal 4: Corresponds with Portfolio Carousel Item 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('front-end/images/portfolio/bg-4.jpg')">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 offset-lg-2">
-                                <h2>Project Name</h2>
-                                <hr class="colored">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                            </div>
-                            <div class="col-lg-8 offset-lg-2">
-                                <div class="device-mockup macbook portrait black">
-                                    <div class="device">
-                                        <div class="screen">
-
-                                            <!-- Modal Mockup Option 1: Single Image (Example In Use Below) -->
-                                            <img src="front-end/images/portfolio/screen-4.jpg" class="img-fluid" alt="">
-
-                                            <!-- Modal Mockup Option 2: Carousel (Uncomment Below to Use) -->
-                                            <!-- <div class="mockup-carousel">
-                                            <div class="item">
-                                                <img src="front-end/images/portfolio/screen-1a.jpg" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="item">
-                                                <img src="front-end/images/portfolio/screen-2a.jpg" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="item">
-                                                <img src="front-end/images/portfolio/screen-3a.jpg" class="img-fluid" alt="">
-                                            </div>
-                                        </div> -->
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 offset-lg-2">
-                                <ul class="list-inline item-details">
-                                    <li>Client: <strong>Start Bootstrap</strong>
-                                    </li>
-                                    <li>Date: <strong>April 2017</strong>
-                                    </li>
-                                    <li>Service: <strong>Web Development</strong>
-                                    </li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="front-end/scripts/source/agency/jquery.min.js"></script>
@@ -1124,77 +674,10 @@
     <!-- Custom scripts for this theme -->
     <script src="front-end/scripts/source/agency/vitality.js"></script>
     <script src="front-end/scripts/source/agency/vitality-mixitup.js"></script>
-
+    <script src="front-end/scripts/custom/login.js"></script>
+    <script src="front-end/scripts/custom//sweetalert.min.js"></script>
+    <script src="https://use.fontawesome.com/7220ca67c6.js"></script>
     <!-- build:remove:dist -->
-
-    <script>
-    // Analytics Tracking - DEMO ONLY!
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-38417733-23', 'auto');
-    ga('send', 'pageview');
-    </script>
-
-    <!-- Style Switcher - FOR DEMO PURPOSES ONLY -->
-    <div id="style-switcher" class="close-style-switcher animated bounce">
-        <!--Panel Button -->
-        <a class="panel-button text-primary"><i class="fa fa-gear"></i></a>
-        <!-- Colors -->
-        <div class="segment">
-            <h4>Theme Colors</h4>
-            <a title="vitality-red" class="switcher red-bg"></a>
-            <a title="vitality-orange" class="switcher orange-bg"></a>
-            <a title="vitality-yellow" class="switcher yellow-bg"></a>
-            <a title="vitality-green" class="switcher green-bg"></a>
-            <a title="vitality-turquoise" class="switcher turquoise-bg"></a>
-            <a title="vitality-aqua" class="switcher aqua-bg"></a>
-            <a title="vitality-blue" class="switcher blue-bg"></a>
-            <a title="vitality-purple" class="switcher purple-bg"></a>
-            <a title="vitality-pink" class="switcher pink-bg"></a>
-            <a title="vitality-tan" class="switcher tan-bg"></a>
-        </div>
-        <div class="segment">
-            <h4>Samples</h4>
-            <ul class="list-unstyled">
-                <li>
-                    <a href="agency.html">Agency</a>
-                </li>
-                <li>
-                    <a href="creative.html">Creative</a>
-                </li>
-                <li>
-                    <a href="culinary.html">Culinary</a>
-                </li>
-                <li>
-                    <a href="fashion.html">Fashion</a>
-                </li>
-                <li>
-                    <a href="legal.html">Legal</a>
-                </li>
-                <li>
-                    <a href="video.html">Video</a>
-                </li>
-            </ul>
-        </div>
-        <div class="segment">
-            <a href="index.php">
-                <small>Back to Preview Page</small>
-            </a>
-        </div>
-    </div>
-    <script src="front-end/scripts/source/agency/style.switcher.js"></script>
-    <!-- End Style Switcher -->
-    <!-- /build -->
-
 </body>
 
 </html>
