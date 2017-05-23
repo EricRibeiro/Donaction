@@ -21,6 +21,10 @@ public class DoadorService extends SQLMetodos<Doador> {
 		super(hostName, dbName, user, pwd);
 	}
 	
+	DoadorService() {
+		super();
+	}
+	
 	public Boolean cadastrar(Request request) throws Exception {
 		setConnection(DriverManager.getConnection(getUrl()));
 		Query query = request.getQuery();

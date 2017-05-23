@@ -20,6 +20,10 @@ public abstract class SQLMetodos<T> {
 				hostName, dbName, user, pwd));
 	}
 	
+	SQLMetodos() {
+		this("donaction", "DonactionDB", "donaction@donaction", "goDonate!");
+	}
+	
 	public abstract Boolean cadastrar(Request request) throws Exception;
 	
 	public abstract Boolean atualizarCadastro(Request request) throws Exception;
