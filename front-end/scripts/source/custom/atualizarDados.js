@@ -2,7 +2,7 @@ function clearField(inputId) {
     document.getElementById(inputId).value = "";
 }
 
-$("#atualizar").submit(function(event){
+$("#atualizar").submit(function (event) {
     event.preventDefault();
     var porta = 8080;
     var formData = SerializedUserData();
@@ -10,11 +10,11 @@ $("#atualizar").submit(function(event){
         type: "POST",
         url: $(this).attr('action') + ":" + porta + "/atualizarCadastroEmpresa",
         data: formData,
-        success: function(data, textStatus, jqXHR) {
-            sweetAlert("Dados Alterados com Sucesso!","","success");      
+        success: function (data, textStatus, jqXHR) {
+            sweetAlert("Dados Alterados com Sucesso!", "", "success");
         },
-        error: function(xhr, textStatus, errorThrown) {
-            sweetAlert("Dados inválido!","","error");
+        error: function (xhr, textStatus, errorThrown) {
+            sweetAlert("Dados inválido!", "", "error");
         }
     });
 });
@@ -31,6 +31,6 @@ function notBlank(inputId) {
     var userData = JSON.parse(localStorage.getItem("userData"));
     var inputValue = $(inputId).val();
     if (inputValue == "" && inputId == "email") {
-        $(inputId).val() = userData.email
+        userData.email = $(inputId).val();
     }
 }
