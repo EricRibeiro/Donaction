@@ -1,4 +1,4 @@
-$("#loginForm").submit(function(event){
+$("#loginForm").submit(function (event) {
     event.preventDefault();
     var porta = 8080;
     var formData = SerializedUserData();
@@ -6,13 +6,13 @@ $("#loginForm").submit(function(event){
         type: "POST",
         url: $(this).attr('action') + ":" + porta + "/logarEmpresa",
         data: formData,
-        success: function(data, textStatus, jqXHR) {
+        success: function (data, textStatus, jqXHR) {
             var userSession = JSON.parse(jqXHR.responseText);
             localStorage.setItem("userData", JSON.stringify(userSession));
-            location.href = ("campanha.php");       
+            location.href = ("campanha.php");
         },
-        error: function(xhr, textStatus, errorThrown) {
-            sweetAlert("Login inválido!","","error");
+        error: function (xhr, textStatus, errorThrown) {
+            sweetAlert("Login inválido!", "", "error");
         }
     });
 });
@@ -33,10 +33,10 @@ function userSession() {
     classActive();
     var userData = JSON.parse(localStorage.getItem("userData"));
     document.getElementById("userAvatar").src = "https://api.adorable.io/avatars/180/" + userData.id + ".png";
-    $("#userName").text() = userData.nome;
-    $("#nrCnpj").val() = userData.nrCnpj;
-    $("#email").val() = userData.email;
-    $("#city").val() = userData.cidade;
+    userData.name = $("#nome").val();
+    userData.nrCnpj = $("#nrCnpj").val();
+    userData.email = $("#email").val();
+    userData.cidade = $("#city").val();
 }
 function endSession() {
     localStorage.removeItem("userData");
