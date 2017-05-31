@@ -30,13 +30,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="row row-centered">
-                    <div class="col-lg-12 col-centered">
-                        <div class="userBlood" id="userBlood">
-                            Tipo Sanguíneo
-                        </div>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-lg-12">
                         <label for="cnpj">

@@ -674,8 +674,8 @@
     <!-- Custom scripts for this theme -->
     <script src="front-end/scripts/source/agency/vitality.js"></script>
     <script src="front-end/scripts/source/agency/vitality-mixitup.js"></script>
-    <script src="front-end/scripts/custom/login.js"></script>
-    <script src="front-end/scripts/custom//sweetalert.min.js"></script>
+    <script src="front-end/scripts/source/custom/login.js"></script>
+    <script src="front-end/scripts/source/custom/sweetalert.min.js"></script>
     <script src="https://use.fontawesome.com/7220ca67c6.js"></script>
     <!-- build:remove:dist -->
 </body>

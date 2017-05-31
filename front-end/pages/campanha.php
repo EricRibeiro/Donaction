@@ -37,7 +37,7 @@
                             </a>
                         </li>
                         <li>
-                            <a data-toggle="tab" href="#gifts" title="Apadrinhe uma Campanha">
+                            <a id="disponiveis" data-toggle="tab" href="#apadrinhe" title="Apadrinhe uma Campanha">
                                         <span class="round-tabs three">
                                             <i class="glyphicon glyphicon-globe">
                                             </i>
@@ -83,37 +83,17 @@
                             Essas aqui são as campanhas ativas
                         </h3>
                         <p class="narrow text-center">
-                        <div class="panel panel-primary">
-                            <div class="panel-body">
-                                <input type="text" class="form-control" id="dev-table-filter" data-action="filter"
-                                       data-filters="#dev-table" placeholder="Filtrar Campanhas"/>
-                            </div>
-                        </div>
                         <div id="campanhasTable">
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="gifts">
+                    <div class="tab-pane fade" id="apadrinhe">
                         <h3 class="head text-center">
                             Campanhas novas que precisam de <strong>você</strong>!
                         </h3>
                         <p class="narrow text-center">
                         <div class="container">
-                            <div class="row">
-                                <img src="../images/campanhas/campanha0.jpg" alt="campanha0" class="img-rounded"
-                                     width="140" height="140" href="#" data-toggle="modal"
-                                     data-target="#campanha-modal0">
-                                <img src="../images/campanhas/doeVida.jpg" alt="campanha1" class="img-rounded"
-                                     width="140" height="140" href="#" data-toggle="modal"
-                                     data-target="#campanha-modal1">
-                                <img src="../images/campanhas/codorninha.jpg" alt="campanha2" class="img-rounded"
-                                     width="140" height="140" href="#" data-toggle="modal"
-                                     data-target="#campanha-modal2">
-                                <img src="../images/campanhas/musicadavida.jpg" alt="campanha3" class="img-rounded"
-                                     width="140" height="140" href="#" data-toggle="modal"
-                                     data-target="#campanha-modal3">
-                                <img src="../images/campanhas/malibu.png" alt="campanha4" class="img-rounded"
-                                     width="140" height="140" href="#" data-toggle="modal"
-                                     data-target="#campanha-modal4">
+                            <div class="row" id="modalsCampanhas">
+
                             </div>
                         </div>
                         </p>

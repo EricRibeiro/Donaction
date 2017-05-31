@@ -9,6 +9,7 @@ $("#atualizar").submit(function (event) {
     $.ajax({
         type: "POST",
         url: $(this).attr('action') + ":" + porta + "/atualizarCadastroEmpresa",
+        timeout: 5000,
         data: formData,
         success: function (data, textStatus, jqXHR) {
             sweetAlert("Dados Alterados com Sucesso!", "", "success");
@@ -25,12 +26,4 @@ function SerializedUserData() {
     var userEmail = $('#email').val();
     var userLocation = $('#city').val();
     return "cdEmpresa=" + cdEmpresa + "&emailEmpresa=" + userEmail + "&cidadeEmpresa=" + userLocation;
-}
-
-function notBlank(inputId) {
-    var userData = JSON.parse(localStorage.getItem("userData"));
-    var inputValue = $(inputId).val();
-    if (inputValue == "" && inputId == "email") {
-        userData.email = $(inputId).val();
-    }
 }
