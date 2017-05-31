@@ -1,3 +1,4 @@
+package sql;
 
 import java.math.BigInteger;
 import java.sql.DriverManager;
@@ -9,7 +10,7 @@ import org.simpleframework.http.Request;
 
 import com.google.gson.Gson;
 
-public class DoadorService extends SQLConnection<Doador> {
+public class DoadorService extends SQLConnection {
 	
 	private Doador doador;
 	

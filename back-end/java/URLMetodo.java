@@ -1,4 +1,4 @@
-
+package sql;
 import java.io.PrintStream;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
@@ -17,7 +17,7 @@ public class URLMetodo implements Container {
 
 	public static DoadorService dS;
 	public static EmpresaService eS;
-	
+	public static CampanhaService cS;
 	@Override
 	public void handle(Request request, Response response) {
 		try {
@@ -56,6 +56,9 @@ public class URLMetodo implements Container {
 			
 			else if (path.startsWith("/aderirCampanha") && "POST".equals(method))
 				aderirCampanha(request, response);
+			
+			else if (path.startsWith("/cadastrarCampanha") && "POST".equals(method))
+				cadastrarCampanha(request, response); 
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -133,6 +136,12 @@ public class URLMetodo implements Container {
 		else
 			this.enviaResposta(Status.EXPECTATION_FAILED, response);
 	}
+	private void cadastrarCampanha(Request request, Response response) throws Exception {
+		if (cS.cadastrar(request))
+			this.enviaResposta(Status.CREATED, response);
+		else
+			this.enviaResposta(Status.EXPECTATION_FAILED, response);
+	}
 	
 	private void enviaResposta(Status status, Response response) throws Exception {
 		PrintStream body = response.getPrintStream();
@@ -187,6 +196,7 @@ public class URLMetodo implements Container {
 
 		dS = new DoadorService();
 		eS = new EmpresaService();
+		cS = new CampanhaService();
 		
 		int porta = 8080;
 

@@ -1,7 +1,7 @@
-
+package sql;
 import java.sql.Connection;
 
-public abstract class SQLConnection<T> {
+public abstract class SQLConnection {
 	private String hostName;
 	private String dbName;
 	private String user;

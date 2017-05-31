@@ -1,3 +1,4 @@
+package sql;
 
 import java.math.BigInteger;
 import java.sql.DriverManager;
@@ -9,7 +10,7 @@ import org.simpleframework.http.Request;
 
 import com.google.gson.Gson;
 
-public class EmpresaService extends SQLConnection<Empresa> {
+public class EmpresaService extends SQLConnection {
 
 	private Empresa empresa;
 	
