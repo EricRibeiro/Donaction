@@ -98,6 +98,7 @@ $(function () {
             data: formData,
             success: function (data, textStatus, jqXHR) {
                 var campanhas = JSON.parse(jqXHR.responseText);
+                localStorage.setItem("campanhasDisponiveis", JSON.stringify(campanhas));
                 gerarCampanhas(campanhas);
             },
             error: function (err) {
@@ -130,7 +131,7 @@ function gerarCampanhas(campanhas) {
             '<p>Deseja contribuir com ' + campanhas[i].qtdMinVoucher + '?</br>Sendo um investimento de ' + campanhas[i].vlrInvestimento + '</p>' +
             '</div>' +
             '<div class="modal-footer">' +
-            '<button type="button" class="btn btn-success col-md-4" data-dismiss="modal">Claro!</button>' +
+            '<button type="button" class="btn btn-success col-md-4"  onclick="aderir(' + i + ')" data-dismiss="modal">Claro!</button>' +
             '<button type="button" class="btn btn-default col-md-2" data-dismiss="modal">Depois</button>' +
             '</div>' +
             '</div>' +
@@ -140,4 +141,42 @@ function gerarCampanhas(campanhas) {
     }
     document.getElementById("modalsCampanhas").innerHTML = imagem;
     document.getElementById("painelModais").innerHTML = modal;
+}
+
+function aderir(i) {
+    var address = 'http://127.0.0.1:8080/aderirCampanha';
+    var formData = serializedData(i);
+    $.ajax({
+        type: "POST",
+        url: address,
+        timeout: 5000,
+        data: formData,
+        success: function (data, textStatus, jqXHR) {
+            sweetAlert("Campanha aderida!", "", "success");
+        },
+        error: function (err) {
+            sweetAlert("Você já aderiu!", "", "error");
+        }
+    });
+}
+function serializedData(i) {
+    var campanha = JSON.parse(localStorage.getItem("campanhasDisponiveis"));
+    campanha = campanha[i];
+    var dados = JSON.parse(localStorage.getItem("userData"));
+    var qtdVoucher = "qtdMinVoucher=" + campanha.qtdMinVoucher;
+    var cdEmpresa = "&cdEmpresa=" + dados.id;
+    var cdCampanha = "&cdCampanha=" + campanha.cdCampanha;
+    var cidade = "&cidadeEmpresa=" + dados.cidade;
+    var dtInicio = "&dtInicio=" + formatarData(campanha.dtInicio);
+    var prefVoucher = "&prefVoucher=" + getPref();
+    return qtdVoucher + cdEmpresa + cdCampanha + cidade + dtInicio + prefVoucher;
+}
+function getPref() {
+    return (Array(4).join((Math.random().toString(36) + '00000000000000000').slice(2, 18)).slice(0, 3)).toLocaleUpperCase();
+}
+function formatarData(data) {
+    var dia = data.substring(0, data.indexOf("/"));
+    var mes = data.substring(3, data.lastIndexOf("/"));
+    var ano = data.substring(data.lastIndexOf("/") + 1, data.length);
+    return ano + '-' + mes + '-' + dia;
 }
