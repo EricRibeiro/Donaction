@@ -1,4 +1,4 @@
-package sql;
+
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
@@ -135,7 +135,7 @@ public class Empresa extends Usuario {
 			prep.setInt(1, cdEmpresa);
 			prep.setInt(2, cdCampanha);
 			prep.setString(3, prefVoucher);
-			prep.setString(4, dtInicio);
+			prep.setDate(4, java.sql.Date.valueOf(dtInicio));
 			prep.executeUpdate();
 			gerarVoucher(connection, prefVoucher, qtdMinVoucher);
 		} catch (Exception e) {
@@ -177,6 +177,7 @@ public class Empresa extends Usuario {
 	public Collection<Campanha> campanhas(Connection connection, String cidadeEmpresa) throws Exception {
 		Collection<Campanha> listaCampanhas = new LinkedList<>();
 		String selectSql = querySelectCampanhas(cidadeEmpresa);
+		System.out.println(selectSql);
 		try (Statement statement = connection.createStatement();
 				ResultSet resultSet = statement.executeQuery(selectSql)) {
 			listaCampanhas = objetoCampanha(resultSet, listaCampanhas);
@@ -188,7 +189,7 @@ public class Empresa extends Usuario {
 		return null;
 	}
 	private String querySelectCampanhas(String cidadeEmpresa) {
-		return "SELECT C.DSCAMPANHA, C.DTINICIO, C.DTFIM, C.CIDADECAMPANHA, C.NMCAMPANHA, C.VLRINVESTIMENTO, C.QTDMINVOUCHER, C.IMGPATH "
+		return "SELECT C.CDCAMPANHA, C.DSCAMPANHA, C.DTINICIO, C.DTFIM, C.CIDADECAMPANHA, C.NMCAMPANHA, C.VLRINVESTIMENTO, C.QTDMINVOUCHER, C.IMGPATH "
 				+ "FROM CAMPANHA C " + "INNER JOIN EMPRESA E ON C.CIDADECAMPANHA = E.CIDADEEMPRESA "
 				+ "WHERE DTINICIO BETWEEN CONVERT (date, SYSDATETIME()) AND DTFIM " + "AND CIDADEEMPRESA = '"
 				+ cidadeEmpresa + "'";
@@ -197,15 +198,16 @@ public class Empresa extends Usuario {
 			throws Exception {
 		DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 		while (resultSet.next()) {
+			Integer cdCampanha = new Integer(resultSet.getInt("CDCAMPANHA"));
 			String nmCampanha = resultSet.getString("NMCAMPANHA");
 			String dsCampanha = resultSet.getString("DSCAMPANHA");
 			String cidadeCampanha = resultSet.getString("CIDADECAMPANHA");
 			String dtInicio = df.format(resultSet.getDate("DTINICIO"));
 			String dtFim = df.format(resultSet.getDate("DTFIM"));
-			String imgPath = df.format(resultSet.getDate("IMGPATH"));
+			String imgPath = resultSet.getString("IMGPATH");
 			Integer qtdMinVouchers = new Integer(resultSet.getInt("QTDMINVOUCHER"));
 			BigInteger vlrInvestimento = new BigInteger(resultSet.getString("VLRINVESTIMENTO"));
-			listaCampanhas.add(new Campanha(nmCampanha, dsCampanha, cidadeCampanha, dtInicio, dtFim, imgPath, qtdMinVouchers,
+			listaCampanhas.add(new Campanha(cdCampanha, nmCampanha, dsCampanha, cidadeCampanha, dtInicio, dtFim, imgPath, qtdMinVouchers,
 					vlrInvestimento));
 		}
 		return listaCampanhas;

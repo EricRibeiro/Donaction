@@ -1,4 +1,3 @@
-package sql;
 import java.io.PrintStream;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
@@ -194,9 +193,9 @@ public class URLMetodo implements Container {
 	
 	public static void main(String[] list) throws Exception {
 
-		dS = new DoadorService();
-		eS = new EmpresaService();
-		cS = new CampanhaService();
+		dS = new DoadorService("donaction","DonactionDB","donaction@donaction","goDonate!");
+		eS = new EmpresaService("donaction","DonactionDB","donaction@donaction","goDonate!");
+		cS = new CampanhaService("donaction","DonactionDB","donaction@donaction","goDonate!");
 		
 		int porta = 8080;
 

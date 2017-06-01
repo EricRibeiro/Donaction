@@ -1,4 +1,3 @@
-package sql;
 
 import java.math.BigInteger;
 import java.sql.DriverManager;

@@ -1,8 +1,11 @@
-package sql;
 
 import java.math.BigInteger;
 
 public class Campanha {
+	
+
+	
+	private Integer cdCampanha;
 	private String nmCampanha;
 	private String dsCampanha;
 	private String cidadeCampanha;
@@ -12,8 +15,9 @@ public class Campanha {
 	private Integer qtdMinVoucher;
 	private BigInteger vlrInvestimento;
 
-	public Campanha(String nmCampanha, String dsCampanha, String cidadeCampanha, String dtInicio, String dtFim,
+	public Campanha(Integer cdCampanha, String nmCampanha, String dsCampanha, String cidadeCampanha, String dtInicio, String dtFim,
 			String imgPath, Integer qtdMinVoucher, BigInteger vlrInvestimento) {
+		this.cdCampanha = cdCampanha;
 		this.nmCampanha = nmCampanha;
 		this.dsCampanha = dsCampanha;
 		this.cidadeCampanha = cidadeCampanha;
@@ -24,6 +28,9 @@ public class Campanha {
 		this.vlrInvestimento = vlrInvestimento;
 	}
 	
+	public Integer getCdCampanha() {
+		return cdCampanha;
+	}
 	public String getNmCampanha() {
 		return nmCampanha;
 	}
@@ -47,6 +54,9 @@ public class Campanha {
 	}
 	public BigInteger getVlrInvestimento() {
 		return vlrInvestimento;
+	}
+	public void setCdCampanha(Integer cdCampanha) {
+		this.cdCampanha = cdCampanha;
 	}
 	public void setNmCampanha(String nmCampanha) {
 		this.nmCampanha = nmCampanha;
