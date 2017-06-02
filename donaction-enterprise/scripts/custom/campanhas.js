@@ -93,7 +93,7 @@ $(function () {
         var formData = "cidadeEmpresa=" + dados.cidade;
         $.ajax({
             type: "POST",
-            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+            contentType: "application/x-www-form-urlencoded; charset=ISO-8859-1",
             url: address,
             timeout: 5000,
             data: formData,
