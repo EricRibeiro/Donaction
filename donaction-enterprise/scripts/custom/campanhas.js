@@ -115,7 +115,7 @@ function gerarCampanhas(campanhas) {
     var modal = "";
     for (var i = 0; i < campanhas.length; i++) {
         imagem += '<img src="../images/campanhas/' + campanhas[i].imgPath + '.jpg" alt="campanha' + i + '" class="img-rounded"' +
-            'width="140" height="93" href="#" style="padding-right:20px;" data-toggle="modal"' +
+            'width="200" height="133" href="#" style="padding-right:20px;" data-toggle="modal"' +
             'data-target="#campanha-modal' + i + '">';
         modal += '<div class="container" xmlns="http://www.w3.org/1999/html">' +
             '<div class="modal fade" id="campanha-modal' + i + '" role="dialog">' +
@@ -130,8 +130,8 @@ function gerarCampanhas(campanhas) {
             '<p class="text-center"> <img src="../images/campanhas/' + campanhas[i].imgPath + '.jpg" alt="campanha' + i + '" class="img-rounded col-md-12"' +
             'width="400" height="267">' + '</p>' +
             '<div class="row">' +
-            '<div class="col-md-6 text-center"><p class="text-center">Vouchers: ' + campanhas[i].qtdMinVoucher + '</p></div>' +
-            '<div class="col-md-6 text-center"><p text-center>Valor: R$' + campanhas[i].vlrInvestimento + ',00</p></div>' +
+            '<div class="col-md-6 text-center"><p class="text-center">Vouchers: ' + campanhas[i].qtdMinVoucher + '.</p></div>' +
+            '<div class="col-md-6 text-center"><p text-center>Valor: R$' + campanhas[i].vlrInvestimento + ',00.</p></div>' +
             '</div>' +
             '<div class="modal-footer">' +
             '<div class="row">' +

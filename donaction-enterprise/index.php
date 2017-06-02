@@ -58,7 +58,7 @@
                 Menu <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand page-scroll" href="#page-top">
-                <img class="img-fluid" src="images/agency/logo.svg" alt="">
+                Donaction
             </a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">

@@ -316,14 +316,19 @@ p.narrow.text-center {
 }
 /*#modalsCampanhas > img:nth-child(2) {
 	margin-right: 10px;
-}
+}*/
 
 #campanha-modal0 > div > div > div.modal-body > p.text-center > img {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
-#campanha-modal1 > div > div > div.modal-body {
+#campanha-modal1 > div > div > div.modal-body > p.text-center > img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*#campanha-modal1 > div > div > div.modal-body {
     font-family: Century Gothic, sans-serif; 
     font-weight: bold;
     font-size: 1.3em;
