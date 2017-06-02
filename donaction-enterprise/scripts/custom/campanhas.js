@@ -175,7 +175,7 @@ function formatarData(data) {
 function aderir(i) {
     swal({
       title: "Confirmar",
-      text: "Prosseguir com a adesão a campanha?",
+      text: "Prosseguir com a adesão à campanha?",
       type: "info",
       showCancelButton: true,
       closeOnConfirm: false,

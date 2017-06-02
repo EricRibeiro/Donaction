@@ -1,35 +1,67 @@
 var canDonate = ["", "", "", ""];
 
+
+   
+
+function userLogOn() {
+    var formData = SerializedUserData();
+    var porta = 8080;
+    $.ajax({
+        type: "POST",
+        url: $("#myForm").attr('action') + ":" + porta + "/cadastrarDoador",
+        timeout: 5000,
+        data: formData,
+        success: function(data, textStatus, jqXHR) {
+            swal({
+                html: true,
+                title: "Pronto!",
+                text: "O cadastro foi realizado com sucesso.",
+                type: "success",
+                confirmButtonText: "Continuar",
+                closeOnConfirm: false
+            }, function() {
+                location.href = "../index.php"
+            })
+        },
+        error: function(xhr, textStatus, errorThrown) {
+             swal({
+                html: true,
+                title: "Algo deu errado :(",
+                text: "Tente novamente mais tarde.",
+                type: "error",
+                closeOnConfirm: false
+            }, function() {
+                location.href = "../index.php"
+            })
+        }
+    });
+}
+
+
 $("#myForm").submit(function(event){
     event.preventDefault();
-    $('#submit').click(false);
-    if(!validateForm()) {
-        sweetAlert("Formulário inválido!", "Preencha todos os campos!", "error");
-        $('#submit').off('click');
-    }
+    if(!validateForm()) 
+        sweetAlert("Formulário inválido!", "Preencha todos os campos para prosseguir!", "error");
     else {
-        var formData = SerializedUserData();
-        var porta = 8080;
-        $.ajax({
-            type: "POST",
-            url: $(this).attr('action') + ":" + porta + "/cadastrarDoador",
-            timeout: 5000,
-            data: formData,
-            success: function(data, textStatus, jqXHR) {
-                swal({
-                    html: true,
-                    title: "Pronto!",
-                    text: "O cadastro foi realizado com sucesso.",
-                    type: "success",
-                    confirmButtonText: "Continuar",
-                    closeOnConfirm: false,
-                }, function() {
-                    location.href = "../index.php"
-                })
-            }
+        swal({
+          title: "Confirmar",
+          text: "Os dados inseridos estão corretos?",
+          type: "info",
+          allowEscapeKey: false,
+          allowOutsideClick: false,
+          showCancelButton: true,
+          confirmButtonText: "Sim",
+          cancelButtonText: "Não",
+          closeOnConfirm: false,
+          showLoaderOnConfirm: true,
+        },
+        function(){
+          setTimeout(function(){
+            userLogOn();
+          }, 5000);
         });
     }
-});
+})
 
 function SerializedUserData() {
     var userName = document.getElementById('name').value;

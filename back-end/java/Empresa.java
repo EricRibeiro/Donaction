@@ -189,8 +189,8 @@ public class Empresa extends Usuario {
 	}
 	private String querySelectCampanhas(String cidadeEmpresa) {
 		return "SELECT C.CDCAMPANHA, C.DSCAMPANHA, C.DTINICIO, C.DTFIM, C.CIDADECAMPANHA, C.NMCAMPANHA, C.VLRINVESTIMENTO, C.QTDMINVOUCHER, C.IMGPATH "
-				+ "FROM CAMPANHA C " + "INNER JOIN EMPRESA E ON C.CIDADECAMPANHA = E.CIDADEEMPRESA "
-				+ "WHERE DTINICIO BETWEEN CONVERT (date, SYSDATETIME()) AND DTFIM " + "AND CIDADEEMPRESA = '"
+				+ "FROM CAMPANHA C "
+				+ "WHERE DTINICIO BETWEEN CONVERT (date, SYSDATETIME()) AND DTFIM " + "AND CIDADECAMPANHA = '"
 				+ cidadeEmpresa + "'";
 	}
 	private Collection<Campanha> objetoCampanha(ResultSet resultSet, Collection<Campanha> listaCampanhas)
