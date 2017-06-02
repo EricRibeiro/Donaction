@@ -124,7 +124,7 @@ public class URLMetodo implements Container {
 	}
 	private void campanhasDisponiveis(Request request, Response response) throws Exception {
 		String campanhas = eS.campanhas(request);
-		if (campanhas != null)
+		if (campanhas != null) 
 			this.enviaResposta(Status.OK, response, campanhas);
 		else
 			this.enviaResposta(Status.EXPECTATION_FAILED, response);
@@ -133,7 +133,7 @@ public class URLMetodo implements Container {
 		if (eS.aderirCampanha(request))
 			this.enviaResposta(Status.OK, response);
 		else
-			this.enviaResposta(Status.EXPECTATION_FAILED, response);
+			this.enviaResposta(Status.CONFLICT, response);
 	}
 	private void cadastrarCampanha(Request request, Response response) throws Exception {
 		if (cS.cadastrar(request))
@@ -177,7 +177,7 @@ public class URLMetodo implements Container {
 		response.setValue("Access-Control-Allow-Origin","*");
 		response.setValue("Access-Control-Allow-Methods","GET,POST");
 	    response.setValue("Access-Control-Allow-Headers","Origin, X-Requested-With, Content-Type, Accept");
-		response.setValue("Content-Type", "application/json");
+	    response.setValue("Content-Type", "application/x-www-form-urlencoded; charset=ISO-8859-1");
 		response.setValue("Server", "Controle de Login");
 		response.setDate("Date", time);
 		response.setDate("Last-Modified", time);
@@ -193,9 +193,9 @@ public class URLMetodo implements Container {
 	
 	public static void main(String[] list) throws Exception {
 
-		dS = new DoadorService("donaction","DonactionDB","donaction@donaction","goDonate!");
-		eS = new EmpresaService("donaction","DonactionDB","donaction@donaction","goDonate!");
-		cS = new CampanhaService("donaction","DonactionDB","donaction@donaction","goDonate!");
+		dS = new DoadorService();
+		eS = new EmpresaService();
+		cS = new CampanhaService();
 		
 		int porta = 8080;
 
