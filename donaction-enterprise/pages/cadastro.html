@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+	<meta charset="utf-8">
+	
+	<!-- CSS _-->
+	<link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../styles/sweetalert.css">
+	<link rel="stylesheet" type="text/css" href="../styles/cadastro.css">
+
+</head>
+<body>
+	<header class="ccheader col-lg-6">
+           <h3>Preencha com o seus dados</h3> 
+    </header>
+    <div class="wrapper">
+    	<form class="ccform" action="http://127.0.1" id ="campos" method="POST">
+    		<div class="ccfield-prepend">
+                <span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
+                <input class="ccformfield" type="text" name="nome" id="nome" placeholder="Nome">
+            </div>
+            <div class="ccfield-prepend">
+                <span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
+                <input class="ccformfield" type="text" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="ccfield-prepend">
+                <span class="ccform-addon"><i class="fa fa-id-card fa-2x"></i></span>
+                <input class="ccformfield" type="text" name="nrCnpj" id="nrCnpj" placeholder="Cnpj">
+            </div>
+            
+            <div class="ccfield-prepend">
+                <span class="ccform-addon"><i class="fa fa-heart fa-2x"></i></span>
+                <input class="ccformfield"  id="senha" placeholder="Senha" type="password">
+            </div>
+           
+            <div class="ccfield-prepend">
+                <span class="ccform-addon"><i class="fa fa-map-marker fa-2x"></i></span>
+                <select class="ccformfield" id ="cidade" title="Cidade">
+                    <option>Cidade</option>
+                    <option>Belo Horizonte</option>    
+                    <option>Contagem</option>
+                    <option>Betim</option>
+                </select>
+            </div>
+            <div class="row">
+               <div>
+       		        <button class="ccbtn" onclick="history.go(-1);">Voltar</button>
+     	       </div>
+
+              <div class="col-lg-3 col-xs-6">
+                 <input class="ccbtn" type="submit" id="submit" value="Enviar">
+              </div>
+           </div>
+    	</form>
+    </div>
+<!-- JS -->
+<script src="../scripts/source/agency/jquery.min.js"></script>
+<script src="../scripts/source/agency/tether.min.js"></script>
+<script src="../scripts/source/agency/bootstrap.min.js"></script>
+<script src="../scripts/custom/cadastro.js"></script>
+<script src="../scripts/source/agency/sweetalert.min.js"></script>
+<script src="https://use.fontawesome.com/7220ca67c6.js"></script>
+
+</body>
+</html>
