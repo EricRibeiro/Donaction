@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Sessão de usuário</title>
-    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../styles/enterpriseTemplate.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -29,7 +29,7 @@
                             </a>
                         </li>
                         <li>
-                            <a id="donaction" data-toggle="tab" href="#campanhasAtivas" title="Campanhas Atuais">
+                            <a id="donaction" data-toggle="tab" href="#campanhasAtivas" title="Histórico">
                                         <span class="round-tabs two">
                                             <i class="glyphicon glyphicon-heart">
                                             </i>
@@ -37,7 +37,7 @@
                             </a>
                         </li>
                         <li>
-                            <a id="disponiveis" data-toggle="tab" href="#apadrinhe" title="Apadrinhe uma Campanha">
+                            <a id="disponiveis" data-toggle="tab" href="#apadrinhe" title="Campanhas">
                                         <span class="round-tabs three">
                                             <i class="glyphicon glyphicon-globe">
                                             </i>
@@ -80,7 +80,7 @@
                     </div>
                     <div class="tab-pane fade" id="campanhasAtivas">
                         <h3 class="head text-center">
-                            Essas aqui são as campanhas ativas
+                            Campanhas que você fez parte
                         </h3>
                         <p class="narrow text-center">
                         <div id="campanhasTable">
@@ -93,7 +93,7 @@
                         <p class="narrow text-center">
                         <div class="container">
                             <div class="row" id="modalsCampanhas">
-
+                                
                             </div>
                         </div>
                         </p>

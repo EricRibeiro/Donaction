@@ -93,6 +93,7 @@ $(function () {
         var formData = "cidadeEmpresa=" + dados.cidade;
         $.ajax({
             type: "POST",
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
             url: address,
             timeout: 5000,
             data: formData,
@@ -129,7 +130,8 @@ function gerarCampanhas(campanhas) {
             '<p class="text-center"> <img src="../images/campanhas/' + campanhas[i].imgPath + '.jpg" alt="campanha' + i + '" class="img-rounded col-md-12"' +
             'width="400" height="267">' + '</p>' +
             '<div class="row">' +
-            '<p col-md-6 text-center>Quantidade de Vouchers: ' + campanhas[i].qtdMinVoucher + '</p><p col-md-6 text-center>É um investimento de R$:' + campanhas[i].vlrInvestimento + ',00.</p>' +
+            '<div class="col-md-6 text-center"><p class="text-center">Vouchers: ' + campanhas[i].qtdMinVoucher + '</p></div>' +
+            '<div class="col-md-6 text-center"><p text-center>Valor: R$' + campanhas[i].vlrInvestimento + ',00</p></div>' +
             '</div>' +
             '<div class="modal-footer">' +
             '<div class="row">' +
@@ -147,22 +149,7 @@ function gerarCampanhas(campanhas) {
     document.getElementById("painelModais").innerHTML = modal;
 }
 
-function aderir(i) {
-    var address = 'http://127.0.0.1:8080/aderirCampanha';
-    var formData = serializedData(i);
-    $.ajax({
-        type: "POST",
-        url: address,
-        timeout: 5000,
-        data: formData,
-        success: function (data, textStatus, jqXHR) {
-            sweetAlert("Campanha aderida!", "", "success");
-        },
-        error: function (err) {
-            sweetAlert("Você já aderiu!", "", "error");
-        }
-    });
-}
+
 function serializedData(i) {
     var campanha = JSON.parse(localStorage.getItem("campanhasDisponiveis"));
     campanha = campanha[i];
@@ -183,4 +170,34 @@ function formatarData(data) {
     var mes = data.substring(3, data.lastIndexOf("/"));
     var ano = data.substring(data.lastIndexOf("/") + 1, data.length);
     return ano + '-' + mes + '-' + dia;
+}
+
+function aderir(i) {
+    swal({
+      title: "Confirmar",
+      text: "Prosseguir com a adesão a campanha?",
+      type: "info",
+      showCancelButton: true,
+      closeOnConfirm: false,
+      showLoaderOnConfirm: true,
+      allowOutsideClick: false,
+      cancelButtonText: "Cancelar"
+    },
+    function(){
+      setTimeout(function(){
+        var address = 'http://127.0.0.1:8080/aderirCampanha';
+        var formData = serializedData(i);
+        $.ajax({
+            type: "POST",
+            url: address,
+            data: formData,
+            success: function (data, textStatus, jqXHR) {
+                sweetAlert("Tudo Pronto!", "", "success");
+            },
+            error: function (err) {
+                sweetAlert("Ops, você já aderiu!", "", "error");
+            }
+        });
+      }, 10000);
+    });
 }

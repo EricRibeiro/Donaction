@@ -314,11 +314,17 @@ p.narrow.text-center {
     font-weight: 800;
     padding: 3px 10px 2px;
 }
-#modalsCampanhas > img:nth-child(2) {
+/*#modalsCampanhas > img:nth-child(2) {
 	margin-right: 10px;
 }
 
-#campanha-modal0 > div > div > div.modal-body > p.text-center > img{
+#campanha-modal0 > div > div > div.modal-body > p.text-center > img {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+#campanha-modal1 > div > div > div.modal-body {
+    font-family: Century Gothic, sans-serif; 
+    font-weight: bold;
+    font-size: 1.3em;
+}*/
