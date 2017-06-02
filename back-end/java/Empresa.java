@@ -177,7 +177,6 @@ public class Empresa extends Usuario {
 	public Collection<Campanha> campanhas(Connection connection, String cidadeEmpresa) throws Exception {
 		Collection<Campanha> listaCampanhas = new LinkedList<>();
 		String selectSql = querySelectCampanhas(cidadeEmpresa);
-		System.out.println(selectSql);
 		try (Statement statement = connection.createStatement();
 				ResultSet resultSet = statement.executeQuery(selectSql)) {
 			listaCampanhas = objetoCampanha(resultSet, listaCampanhas);
